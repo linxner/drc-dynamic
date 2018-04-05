@@ -67,8 +67,8 @@ $(function(){
                     //年月日
                     var c = new Date(c);
                     cyear = c.getFullYear();
-                    cmonth = c.getMonth();
-                    cday = c.getDay();
+                    cmonth = c.getMonth()+1;
+                    cday = c.getDate();
                     cmonth > 9 ? cmonth = cmonth : cmonth = "0" + cmonth;
                     cday > 9 ? cday = cday : cday = "0" + cday;
                     createtime = cyear + "/" + cmonth + "/" + cday;
